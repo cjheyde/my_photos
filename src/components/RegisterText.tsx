@@ -1,7 +1,7 @@
 function RegisterText() {
   return (
     <section className="simpleText">
-      <a href="my_photos/register">Register</a>
+      <a href="/my_photos/register">Register</a>
     </section>
   );
 }

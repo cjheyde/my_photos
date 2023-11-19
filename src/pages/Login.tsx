@@ -1,11 +1,11 @@
-import Formular from "../components/Formular";
+import LoginForm from "../components/LoginForm";
 import RegisterText from "../components/RegisterText";
 
 function Login() {
   return (
     <div className="mainBox">
       <h1 className="pageTitle">Photos App</h1>
-      <Formular />
+      <LoginForm />
       <RegisterText />
     </div>
   );
