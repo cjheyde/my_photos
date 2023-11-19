@@ -43,12 +43,9 @@
 }
 
 .pageTitle {
+  color: var(--graphite);
   font-weight: 300;
   text-align: center;
-}
-
-.pageTitle:hover {
-  background-color: var(--blue-acqua);
 }
 
 form {
