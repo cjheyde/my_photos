@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-import StyledButton from "./components/StyledButton";
+import StyledButton from "./StyledButton";
 
 function Formular() {
   // const [inputValue, setInputValue] = useState("");
