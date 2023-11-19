@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -17,7 +18,6 @@ const StyledButton = styled.button`
   justify-content: center;
   margin: 8px;
   padding: 0.4em 1em;
-  position: relative;
   text-align: center;
   transition: 1s all ease-out;
   width: 100px;

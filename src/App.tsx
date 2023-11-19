@@ -1,15 +1,16 @@
-import './App.css';
-import Formular from "./components/Formular";
-import Register from './components/Register';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div className="mainBox">
-      <h1 className='pageTitle'>Photos App</h1>
-      <Formular />
-      <Register />    
-    </div>
-  )
+      <Routes>
+        <Route path="/my_photos/" element={ <Login /> } />
+        <Route path="/my_photos/register/" element={ <Register /> } />
+        <Route path="/" element={ <Login /> } />
+      </Routes>
+  );
 }
 
-export default App
+export default App;
