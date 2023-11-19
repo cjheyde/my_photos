@@ -1,3 +1,4 @@
+import AuxButton from "../components/AuxButton";
 import Nav from "../components/Nav";
 
 function Logout() {
@@ -5,6 +6,11 @@ function Logout() {
     <div className="mainBox">
       <Nav />
       <h1 className="pageTitle">Logout</h1>
+      <form action="/">
+        <AuxButton type="submit">
+          Logout
+        </AuxButton>
+      </form>
     </div>
   );
 }
