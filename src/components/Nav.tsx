@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
     return (
         <nav>
@@ -5,12 +7,12 @@ function Nav() {
                 <i className="fa fa-bars menu" aria-hidden="true"></i>
             </div>
             <ul>
-            <li><a href="view_photos">View Photos</a></li>
-            <li><a href="upload_photos">Upload Photos</a></li>
-            <li><a href="download_photos">Download Photos</a></li>
-            <li><a href="favorite_photos">Favorite Photos</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="logout" >Logout</a></li>
+            <li><Link to="view_photos">View Photos</Link></li>
+            <li><Link to="upload_photos">Upload Photos</Link></li>
+            <li><Link to="download_photos">Download Photos</Link></li>
+            <li><Link to="favorite_photos">Favorite Photos</Link></li>
+            <li><Link to="contact">Contact</Link></li>
+            <li><Link to="logout" >Logout</Link></li>
             </ul>
         </nav>
     );
