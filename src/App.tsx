@@ -1,10 +1,14 @@
-import './App.css'
+import './App.css';
+import Formular from "./Formular";
+import Register from './Register';
 
 function App() {
   return (
-    <>
-      <h1>Starting my Photos App to allow me to organize all I have!</h1>
-    </>
+    <div className="mainBox">
+      <h1 className='pageTitle'>Photos App</h1>
+      <Formular />
+      <Register />    
+    </div>
   )
 }
 
