@@ -1,10 +1,11 @@
 import AuxButton from "../components/AuxButton";
 import StyledButton from "../components/StyledButton";
+import Title from "../components/Title";
 
 function Login() {
   return (
     <div className="mainBox">
-      <h1 className="pageTitle">Register Form</h1>
+      <Title title="Register Form" />
       <main>
         <form action="main">
           <input
@@ -53,7 +54,7 @@ function Login() {
             Reset
           </AuxButton>
         </form>
-        <form action="logout">
+        <form action="/">
           <AuxButton type="submit">
             Exit
           </AuxButton>

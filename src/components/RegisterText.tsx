@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 function RegisterText() {
   return (
     <section className="simpleText">
-      <a href="/my_photos/register">Register</a>
+      <Link to="/my_photos/register">Register</Link>
     </section>
   );
 }

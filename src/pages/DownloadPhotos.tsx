@@ -1,9 +1,9 @@
-import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
 
 function DownloadPhotos() {
   return (
     <div className="mainBox">
-      <Nav />
+      <Navbar />
       <h1 className="pageTitle">Download Photos</h1>
     </div>
   );

@@ -1,10 +1,11 @@
-import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 function Main() {
   return (
     <div className="mainBox">
-      <Nav />
-      <h1 className="pageTitle">Main</h1>
+      <Navbar />
+      <Title title="Main Screen" />
     </div>
   );
 }

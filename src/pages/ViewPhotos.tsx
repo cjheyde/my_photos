@@ -1,9 +1,9 @@
-import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
 
 function ViewPhotos() {
   return (
     <div className="mainBox">
-      <Nav />
+      <Navbar />
       <h1 className="pageTitle">View Photos</h1>
     </div>
   );

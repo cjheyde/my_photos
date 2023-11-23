@@ -1,9 +1,9 @@
-import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
 
 function ForgotPassword() {
   return (
     <div className="mainBox">
-      <Nav />
+      <Navbar />
       <h1 className="pageTitle">I Forgot My Password!</h1>
     </div>
   );

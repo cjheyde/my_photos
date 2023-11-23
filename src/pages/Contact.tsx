@@ -1,10 +1,11 @@
-import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 function Contact() {
   return (
     <div className="mainBox">
-      <Nav />
-      <h1 className="pageTitle">Contact</h1>
+      <Navbar />
+      <Title title="Contact" />
     </div>
   );
 }
