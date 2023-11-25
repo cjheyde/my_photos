@@ -26,6 +26,9 @@ function Navbar() {
           <Link to="/my_photos/contact">Contact</Link>
         </li>
         <li>
+          <Link to="/my_photos/login">Login</Link>
+        </li>
+        <li>
           <Link to="/my_photos/logout">Logout</Link>
         </li>
       </ul>

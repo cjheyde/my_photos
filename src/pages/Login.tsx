@@ -1,14 +1,22 @@
+import { Link } from "react-router-dom";
 import LoginForm from "../components/LoginForm";
-import RegisterText from "../components/RegisterText";
+import PhotosContext from "../context/PhotosContext";
 import Title from "../components/Title";
 
 function Login() {
   return (
-    <div className="mainBox">
-      <Title title="App Photos" />
+    <>
+      <PhotosContext.Provider value={{ titleMessage: "Login" }}>
+        <Title />
+      </PhotosContext.Provider>
       <LoginForm />
-      <RegisterText />
-    </div>
+      <section className="simpleText">
+        <Link to="/my_photos/forgot_password">I Forgot my Password!</Link>
+        <p>
+          <Link to="/my_photos/register">Register</Link>
+        </p>
+      </section>
+    </>
   );
 }
 

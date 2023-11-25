@@ -1,11 +1,14 @@
 import AuxButton from "../components/AuxButton";
 import StyledButton from "../components/StyledButton";
 import Title from "../components/Title";
+import PhotosContext from "../context/PhotosContext";
 
 function Login() {
   return (
     <div className="mainBox">
-      <Title title="Register Form" />
+      <PhotosContext.Provider value={{ titleMessage: "Register" }}>
+        <Title />
+      </PhotosContext.Provider>
       <main>
         <form action="main">
           <input

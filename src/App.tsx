@@ -24,8 +24,8 @@ function App() {
       <Route path="/my_photos/download_photos" element={<DownloadPhotos />} />
       <Route path="/my_photos/upload_photos" element={<UploadPhotos />} />
       <Route path="/my_photos/view_photos" element={<ViewPhotos />} />
-      <Route path="/my_photos" element={<Login />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/my_photos" element={<Main />} />
+      <Route path="/" element={<Main />} />
     </Routes>
   );
 }
