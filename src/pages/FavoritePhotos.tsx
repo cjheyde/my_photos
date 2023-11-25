@@ -1,12 +1,11 @@
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function FavoritePhotos() {
   return (
-    <div className="mainBox">
-      <Navbar />
-      <Title title="I Forgot My Password!" />
-      <h1 className="pageTitle">Favorite Photos</h1>
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: 'Favorite Photos' }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 

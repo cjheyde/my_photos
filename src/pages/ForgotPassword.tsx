@@ -1,12 +1,11 @@
-import Navbar from "../components/Navbar";
-import Title from "../components/Title";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function ForgotPassword() {
   return (
-    <div className="mainBox">
-      <Navbar />
-      <Title title="I Forgot My Password!" />
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: "I Forgot My Password!" }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 

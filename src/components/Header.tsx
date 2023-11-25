@@ -1,11 +1,12 @@
 import Navbar from "./Navbar";
 import Title from "./Title";
 
-function Header(props: string) {
+function Header() {
+
   return (
-    <header>
+    <header className="mainBox">
       <Navbar />
-      <Title title={props} />
+      <Title />
     </header>
   );
 }

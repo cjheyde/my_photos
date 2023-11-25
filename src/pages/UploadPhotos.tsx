@@ -1,12 +1,11 @@
-import Navbar from "../components/Navbar";
-import Title from "../components/Title";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function UploadPhotos() {
   return (
-    <div className="mainBox">
-      <Navbar />
-      <Title title="Upload Photos" />
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: "Upload Photos" }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 

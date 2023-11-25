@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function DownloadPhotos() {
   return (
-    <div className="mainBox">
-      <Navbar />
-      <h1 className="pageTitle">Download Photos</h1>
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: 'Download Photos' }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 

@@ -1,12 +1,11 @@
-import Navbar from "../components/Navbar";
-import Title from "../components/Title";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function Main() {
   return (
-    <div className="mainBox">
-      <Navbar />
-      <Title title="Main Screen" />
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: "Main Screen" }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 
