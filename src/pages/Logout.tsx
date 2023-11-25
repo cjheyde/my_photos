@@ -1,17 +1,17 @@
 import AuxButton from "../components/AuxButton";
-import Nav from "../components/Nav";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function Logout() {
   return (
-    <div className="mainBox">
-      <Nav />
-      <h1 className="pageTitle">Logout</h1>
-      <form action="/">
-        <AuxButton type="submit">
-          Logout
-        </AuxButton>
+    <>
+      <PhotosContext.Provider value={{ titleMessage: "Logout" }}>
+        <Header />
+      </PhotosContext.Provider>
+      <form action="/" className="mainBox">
+        <AuxButton type="submit">Logout</AuxButton>
       </form>
-    </div>
+    </>
   );
 }
 

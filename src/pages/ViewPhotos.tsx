@@ -1,11 +1,11 @@
-import Nav from "../components/Nav";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function ViewPhotos() {
   return (
-    <div className="mainBox">
-      <Nav />
-      <h1 className="pageTitle">View Photos</h1>
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: "View Photos" }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 

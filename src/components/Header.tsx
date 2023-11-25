@@ -1,9 +1,12 @@
-import Nav from "./Nav";
+import Navbar from "./Navbar";
+import Title from "./Title";
 
 function Header() {
+
   return (
-    <header>
-      <Nav />
+    <header className="mainBox">
+      <Navbar />
+      <Title />
     </header>
   );
 }

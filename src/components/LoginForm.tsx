@@ -4,22 +4,22 @@ import StyledButton from "./StyledButton";
 function Formular() {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
 
-    console.log("Submited Email value:", emailValue);
-    console.log("Submited PassWord value:", passwordValue);
-  };
-  const handleEmailChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
+  const handleEmailChange = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
     setEmailValue(e.target.value);
     setPasswordValue(e.target.value);
   };
-  const handlePasswordChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
+  
+  const handlePasswordChange = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
     setPasswordValue(e.target.value);
   };
-  
+
   return (
-    <form onSubmit={handleSubmit} className="mainBox">
+    <form className="mainBox" action="/my_photos/main" >
       <input
         className="box"
         type="email"

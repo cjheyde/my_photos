@@ -1,11 +1,11 @@
-import Nav from "../components/Nav";
+import Header from "../components/Header";
+import PhotosContext from "../context/PhotosContext";
 
 function Contact() {
   return (
-    <div className="mainBox">
-      <Nav />
-      <h1 className="pageTitle">Contact</h1>
-    </div>
+    <PhotosContext.Provider value={{ titleMessage: "Contact" }}>
+      <Header />
+    </PhotosContext.Provider>
   );
 }
 
