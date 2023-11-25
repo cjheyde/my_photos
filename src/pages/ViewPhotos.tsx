@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 function ViewPhotos() {
   return (
     <div className="mainBox">
       <Navbar />
-      <h1 className="pageTitle">View Photos</h1>
+      <Title title="View Photos" />
     </div>
   );
 }

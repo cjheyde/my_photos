@@ -1,9 +1,12 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from "react-router-dom";
 
+{/* TODO #8 fix Navbar minimized */}
 function Navbar() {
   return (
-    <nav className="nav">
+    <nav className="navbar">
       <div className="littleMenu">
+        {/* ref. https://www.youtube.com/watch?v=W8Ql4jxQk3g */}
         <i className="fa fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul>

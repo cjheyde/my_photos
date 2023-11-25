@@ -1,5 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function Title(props) {
+// TODO #9 create Hooks and global var = title
+function Title(props: object) {
   return <h1 className="pageTitle">{props.title}</h1>;
 }
 

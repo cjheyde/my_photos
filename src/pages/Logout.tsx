@@ -1,11 +1,12 @@
 import AuxButton from "../components/AuxButton";
 import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 function Logout() {
   return (
     <div className="mainBox">
       <Navbar />
-      <h1 className="pageTitle">Logout</h1>
+      <Title title="Logout" />
       <form action="/">
         <AuxButton type="submit">
           Logout

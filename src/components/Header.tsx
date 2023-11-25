@@ -1,9 +1,11 @@
 import Navbar from "./Navbar";
+import Title from "./Title";
 
-function Header() {
+function Header(props: string) {
   return (
     <header>
       <Navbar />
+      <Title title={props} />
     </header>
   );
 }

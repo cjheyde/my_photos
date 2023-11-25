@@ -16,24 +16,21 @@
   justify-content: space-evenly;
 }
 
-.auxBtn {
-  background: linear-gradient(
-    180deg,
-    var(--gray-medium) 0%,
-    rgba(150, 238, 222, 0) 100%
-  );
-  border: 1px solid var(--gray-medium);
-  border-radius: 4px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 20px;
-  height: 40px;
-  justify-content: center;
-  width: 100px;
+.navbar {
+  background-color: var(--pink-light);
+  color: var(--graphite);
+  width: 100%;
 }
 
-.rosa {
-  background-color: var(--pink);
+.littleMenu {
+  background-color: var(--pink-light);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: right;
+  width: 100%;
 }
 
 .simpleText {
@@ -59,22 +56,6 @@ form {
 .box {
   font-size: 18px;
   margin: 6px;
-}
-
-.littleMenu {
-  background-color: var(--pink-light);
-  box-sizing: border-box;
-  cursor: pointer;
-  display: none;
-  font-size: 20px;
-  padding: 10px 10px;
-  text-align: right;
-  width: 100%;
-}
-
-nav {
-  background-color: var(--pink-light);
-  width: 100%;
 }
 
 ul {
@@ -148,28 +129,4 @@ tr:nth-child(odd) {
   .active {
     display: block;
   }
-}
-
-
-test {
-  border: 2px solid #504e4e;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  font-size: 18px;
-  height: 40px;
-  justify-content: center;
-  margin: 8px;
-  padding: 0.4em 1em;
-  position: relative;
-  text-align: center;
-  transition: 1s all ease-out;
-  width: 100px;
-
-  background: linear-gradient(
-    180deg,
-    #969393 0%,
-    rgba(150, 238, 222, 0) 100%
-  );
 }

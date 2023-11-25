@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 function UploadPhotos() {
   return (
     <div className="mainBox">
       <Navbar />
-      <h1 className="pageTitle">Upload Photos</h1>
+      <Title title="Upload Photos" />
     </div>
   );
 }
