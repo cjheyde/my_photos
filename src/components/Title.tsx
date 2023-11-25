@@ -1,5 +1,3 @@
-// TODO #9 create Hooks and global var = title
-// ref. https://www.youtube.com/watch?v=2NEV_M7NN6k
 import { useContext } from "react";
 import PhotosContext from "../context/PhotosContext";
 
